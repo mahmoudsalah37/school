@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="school_dataModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="school_dataEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Entity_School" EntityType="school_dataModel.Entity_School" />
+  </EntityContainer>
+  <EntityType Name="Entity_School">
+    <Key>
+      <PropertyRef Name="اسم_الطالب" />
+    </Key>
+    <Property Name="اسم_الطالب" Type="String" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="المكتب" Type="String" Nullable="false" />
+    <Property Name="المدرسة" Type="String" Nullable="false" />
+    <Property Name="المسار" Type="String" Nullable="false" />
+    <Property Name="معدل_القدرات" Type="String" Nullable="false" />
+    <Property Name="معدل_التحصيل" Type="String" Nullable="false" />
+    <Property Name="معدل_الثانوية_العامة" Type="String" Nullable="false" />
+  </EntityType>
+</Schema>
